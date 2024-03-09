@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
 export const LoadingScreen = () => {
@@ -6,9 +6,7 @@ export const LoadingScreen = () => {
         <View
             style={styles.container}
         >
-            <Text
-                style={styles.text}
-            >LoadingScreen</Text>
+            <ActivityIndicator size="large" color="#000" />
         </View>
     );
 };
